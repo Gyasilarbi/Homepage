@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+
+</head>
+<body>
+    <div class="page1">
+      <nav class="navbar navbar-expand-sm sticky-top bg-white">
+            <div class="container-fluid">
+
+              <a class="navbar-brand" href="#">
+                <img src="Photos/Image_12-removebg-preview.png" alt="" style="width:60px;" class="rounded-pill"> 
+              </a> 
+              
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Explore</a>
+                  </li>
+                  <li><h2 style="font-family: Brush Script MT, cursive;">Akwaaba</h2></li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Experiences</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contacts</a>
+                  </li>    
+                </ul>
+              </div>
+
+              <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                  </svg>
+                  <a href="#"><i class="bi bi-person-circle"></i></a>
+              </div>
+            </div>
+      </nav>
+
+      <div class="main container-fluid">    
+            <div class="frame">
+                <h4>Welcome to the beautiful land of Ghana!🇬🇭</h4>
+                <p>We're thrilled that you've chosen to explore our vibrant and culturally rich country. <br> Get ready for an unforgettable adventure!</p>
+                <form action="">
+                    <label for="sel1" class="form-label">
+                        <select name="selllist1" id="sel1" class="form-select">
+                            <option>Trips</option>
+                            <option>Hotels/Restaurants</option>
+                            <option>Tourist Sites</option>
+                            <option>Activities/Shows</option>
+                            <option>News</option>
+                        </select>
+                    </label>
+                </form>
+            </div>
+            <script>
+                // Wait for the page to load before starting the animation
+                window.addEventListener('load', () => {
+                const text = document.querySelector('.animated-text');
+                text.style.animation = 'none'; // Remove the initial animation
+                text.offsetHeight; // Trigger a reflow
+                text.style.animation = null; // Reapply the animation
+                });
+            </script>   
+      </div>
+
+      <div class="main2">
+        <div class="row container-fluid bg-white">
+            <div class="col-sm-3" id="Trips">
+                <h4>Trips</h4>
+                <p>Enjoy your time in Ghana! Feel free to explore and discover all the wonders that this remarkable country has to offer. We're looking forward to sharing memorable experiences together.</p>
+                <div class="icon2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="green" class="bi bi-airplane" viewBox="0 0 16 16">
+                        <path d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849Zm.894.448C7.111 2.02 7 2.569 7 3v4a.5.5 0 0 1-.276.447l-5.448 2.724a.5.5 0 0 0-.276.447v.792l5.418-.903a.5.5 0 0 1 .575.41l.5 3a.5.5 0 0 1-.14.437L6.708 15h2.586l-.647-.646a.5.5 0 0 1-.14-.436l.5-3a.5.5 0 0 1 .576-.411L15 11.41v-.792a.5.5 0 0 0-.276-.447L9.276 7.447A.5.5 0 0 1 9 7V3c0-.432-.11-.979-.322-1.401C8.458 1.159 8.213 1 8 1c-.213 0-.458.158-.678.599Z"/>
+                    </svg>
+                    <a href="#"><i class="bi bi-airplane"></i></a>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <a href="#">
+                    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+                        <!-- Indicators/dots -->
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                        </div>
+                        
+                        <!-- The slideshow/carousel -->
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="Photos/Image2.jpg" alt="Osu Castle" class="d-block" width=400px height="270px">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="Photos/Image3.jpg" alt="Elmina Castle" class="d-block" width=400px height="270px">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="Photos/Image14.jpg" alt="Cape Coast Castle" class="d-block" width=400px height="270px">
+                          </div>
+                        </div>
+                        
+                        <!-- Left and right controls/icons -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                          <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-3">
+                <a href="#">
+                    <div id="demo1" class="carousel slide" data-bs-ride="carousel">
+
+                        <!-- Indicators/dots -->
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#demo1" data-bs-slide-to="0" class="active"></button>
+                          <button type="button" data-bs-target="#demo1" data-bs-slide-to="1"></button>
+                          <button type="button" data-bs-target="#demo1" data-bs-slide-to="2"></button>
+                        </div>
+                        
+                        <!-- The slideshow/carousel -->
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="Photos/Image7.jpg" alt="Mole National Park" class="d-block" width=400px height="270px">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="Photos/Image8.jpg" alt="Independence Arch" class="d-block" width=400px height="270px">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="Photos/Image17.jpg" alt="Accra" class="d-block" width=400px height="270px">
+                          </div>
+                        </div>
+                        
+                        <!-- Left and right controls/icons -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#demo1" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#demo1" data-bs-slide="next">
+                          <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-3">
+                <a href="#">
+                    <div id="demo2" class="carousel slide" data-bs-ride="carousel">
+
+                        <!-- Indicators/dots -->
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#demo2" data-bs-slide-to="0" class="active"></button>
+                          <button type="button" data-bs-target="#demo2" data-bs-slide-to="1"></button>
+                          <button type="button" data-bs-target="#demo2" data-bs-slide-to="2"></button>
+                        </div>
+                        
+                        <!-- The slideshow/carousel -->
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="Photos/Image24.jpg" alt="James Town Tower" class="d-block" width=400px height="270px">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="Photos/Image25.jpg" alt="Kwame Nkrumah Museuleum" class="d-block" width=400px height="270px">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="Photos/Image26.jpg" alt="Nzulezu" class="d-block" width=400px height="270px">
+                          </div>
+                        </div>
+                        
+                        <!-- Left and right controls/icons -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#demo2" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#demo2" data-bs-slide="next">
+                          <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </a>
+            </div>
+        </div>
+      </div>
+      <div class="main3" style="background-color: whitesmoke;">
+        <div class="main3-1">
+          <div class="row container-fluid">
+            <div class="col-sm-3">
+                <a href="#">
+                    <div id="demo3" class="carousel slide" data-bs-ride="carousel">
+
+                        <!-- Indicators/dots -->
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#demo3" data-bs-slide-to="0" class="active"></button>
+                          <button type="button" data-bs-target="#demo3" data-bs-slide-to="1"></button>
+                          <button type="button" data-bs-target="#demo3" data-bs-slide-to="2"></button>
+                        </div>
+                        
+                        <!-- The slideshow/carousel -->
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="Photos/Image18.jpg" alt="Royal Senchi" class="d-block" width=400px height="270px">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="Photos/Image21.jpg" alt="Number One Oxford Street Hotel" class="d-block" width=400px height="270px">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="Photos/Image22.jpg" alt="Kempinski Hotel" class="d-block" width=400px height="270px">
+                          </div>
+                        </div>
+                        
+                        <!-- Left and right controls/icons -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#demo3" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#demo3" data-bs-slide="next">
+                          <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-3">
+                <a href="#">
+                    <div id="demo4" class="carousel slide" data-bs-ride="carousel">
+
+                        <!-- Indicators/dots -->
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#demo4" data-bs-slide-to="0" class="active"></button>
+                          <button type="button" data-bs-target="#demo4" data-bs-slide-to="1"></button>
+                          <button type="button" data-bs-target="#demo4" data-bs-slide-to="2"></button>
+                        </div>
+                        
+                        <!-- The slideshow/carousel -->
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="Photos/Image27.jpg" alt="Nsuomnam" class="d-block" width=400px height="270px">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="Photos/Image28.jpg" alt="Shogun" class="d-block" width=400px height="270px">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="Photos/Image29.jpg" alt="Food" class="d-block" width=400px height="270px">
+                          </div>
+                        </div>
+                        
+                        <!-- Left and right controls/icons -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#demo4" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#demo4" data-bs-slide="next">
+                          <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-3" id="Trips2">
+                <h4>Hotels/Restaurants</h4>
+                <p>Don't miss the chance to savor our delicious local cuisine, from jollof rice to fried plantains and the ever-popular waakye. <br> And be sure to explore our historical sites, bustling markets, and breathtaking natural beauty.</p>
+                <div class="icon2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="rgb(199,199,0)" class="bi bi-door-closed-fill" viewBox="0 0 16 16">
+                    <path d="M12 1a1 1 0 0 1 1 1v13h1.5a.5.5 0 0 1 0 1h-13a.5.5 0 0 1 0-1H3V2a1 1 0 0 1 1-1h8zm-2 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                  </svg>
+                  <a href="#"><i class="bi bi-door-closed-fill"></i></a>
+                </div>
+            </div>
+            <div class="col-sm-3">
+              <a href="#">
+                  <div id="demo5" class="carousel slide" data-bs-ride="carousel">
+
+                      <!-- Indicators/dots -->
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#demo5" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#demo5" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#demo5" data-bs-slide-to="2"></button>
+                      </div>
+                      
+                      <!-- The slideshow/carousel -->
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="Photos/10B9310C-1918-4855-AD48-A0F0482EE3BF.jpeg" alt="embassy gardens" class="d-block" width=400px height="270px">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="Photos/Image13.jpg" alt="" class="d-block" width=400px height="270px">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="Photos/Image20.jpg" alt="sitting" class="d-block" width=400px height="270px">
+                        </div>
+                      </div>
+                      
+                      <!-- Left and right controls/icons -->
+                      <button class="carousel-control-prev" type="button" data-bs-target="#demo5" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#demo5" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                      </button>
+                  </div>
+              </a>
+          </div>
+        </div>  
+        </div>
+      </div>
+      <div class="main4">
+        <div class="row">
+          <div class="col-sm-7" id="logs">
+          </div>
+          <div class="col-sm-5" id="logs1">
+            <div class="login">
+    
+              <h3>Login</h3>
+              <p>Welcome. <a href="#">New here? Sign Up.</a></p>
+              
+              <form action="">
+                <div class="mb-3">
+                  <input type="email" class="" id="username" placeholder="E-mail" name="user-name">
+                  <i class="bi bi-person"></i>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+                   </svg>
+                </div><div class="mb-3">
+                  <input type="Password" class="" id="password" placeholder="Password" name="psd" required>
+                  <i class="bi bi-lock-fill"></i>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock-fill" viewBox="0 0 16 16">
+                    <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/>
+                  </svg>
+                </div>
+
+              </form>
+
+              <div class="social-links">
+                <p>Join our socials</p>
+                <a href="#"><i class="fa fa-whatsapp"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-snapchat"></i></a>
+              </div>
+
+              <hr>
+
+              <p>Thank you!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
